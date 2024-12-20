@@ -9,18 +9,6 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 import SecondsCounter from "./component/SecondsCounter.jsx";
 
-let seconds = 0;
-
-const root = ReactDOM.createRoot(document.getElementById('app'));
-root.render(<SecondsCounter seconds={seconds}/>);
-
-window.onload = () => {
-    setInterval(() => {
-        seconds++;
-        root.render(<SecondsCounter seconds={seconds}/>);
-    }, 1000);
-}
-
 //render your react application
-
+ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
 
